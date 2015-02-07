@@ -1,11 +1,9 @@
 package me.coderdan.fall.state;
 
-import me.coderdan.fall.Graphics;
+import me.coderdan.fall.util.Graphics;
 import me.coderdan.fall.game.Player;
 import me.coderdan.fall.game.World;
-import me.coderdan.fall.render.*;
 import me.coderdan.fall.render.Button;
-import me.coderdan.fall.util.*;
 import me.coderdan.fall.util.Point;
 import org.lwjgl.input.Keyboard;
 import org.newdawn.slick.Color;
@@ -102,14 +100,14 @@ public class Play extends State
 
 	public void render()
 	{
-        button.draw(Color.black);
-
 		Graphics.init2d();
 		world.draw();
 		player.draw();
 	
 		Graphics.initTexture2d();
 		Graphics.drawText("Score: " + ((int) Math.floor(player.score)), COMIC_SANS_MS_20, Color.red, 550, 100);
+
+		button.draw(Color.black);
 	}
 	
 	public int getID()

@@ -1,6 +1,6 @@
 package me.coderdan.fall.game;
 
-import me.coderdan.fall.Graphics;
+import me.coderdan.fall.util.Graphics;
 import org.lwjgl.util.Rectangle;
 import org.newdawn.slick.Color;
 import org.newdawn.slick.TrueTypeFont;

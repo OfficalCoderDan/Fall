@@ -2,6 +2,7 @@ package me.coderdan.fall;
 
 import me.coderdan.fall.state.MainMenu;
 import me.coderdan.fall.state.StateManager;
+import me.coderdan.fall.util.Player;
 import org.lwjgl.LWJGLException;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.DisplayMode;
@@ -16,7 +17,7 @@ public class Game
 {
 	
 	// Window data.
-	private static final String VERSION = "0.4";
+	private static final String VERSION = "0.4.1";
 	private static final String VERSION_TYPE = "ALPHA";
 	private static final String WINDOW_TITLE = "Fall v" + VERSION + " " + VERSION_TYPE;
 	public static final int WINDOW_WIDTH = 700;

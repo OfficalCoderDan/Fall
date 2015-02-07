@@ -1,4 +1,4 @@
-package me.coderdan.fall;
+package me.coderdan.fall.util;
 
 import me.coderdan.fall.util.Point;
 import org.newdawn.slick.Color;

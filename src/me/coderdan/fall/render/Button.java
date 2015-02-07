@@ -1,6 +1,6 @@
 package me.coderdan.fall.render;
 
-import me.coderdan.fall.Graphics;
+import me.coderdan.fall.util.Graphics;
 import me.coderdan.fall.util.Point;
 import org.newdawn.slick.Color;
 import org.newdawn.slick.TrueTypeFont;
@@ -109,7 +109,9 @@ public class Button
         Graphics.drawRect(colour, width, height, point.getX(), point.getY());
 
         Graphics.initTexture2d();
-        Graphics.drawText(text, ARIAL_20, textColour, point.getX(), point.getY());
+	    float middleX = ((point.getX() + width) / 2.25F) - (ARIAL_20.getWidth(text) / 4);
+	    float middleY = ((point.getY() + height) / 2.25F) + (ARIAL_20.getHeight(text) / 4);
+        Graphics.drawText(text, ARIAL_20, textColour, middleX, middleY);
     }
 
     public void update() { }

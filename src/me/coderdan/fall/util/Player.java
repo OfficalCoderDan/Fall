@@ -1,8 +1,9 @@
-package me.coderdan.fall;
+package me.coderdan.fall.util;
 
 import javazoom.jl.player.advanced.AdvancedPlayer;
 import javazoom.jl.player.advanced.PlaybackEvent;
 import javazoom.jl.player.advanced.PlaybackListener;
+import me.coderdan.fall.Game;
 
 import java.util.HashMap;
 

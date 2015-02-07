@@ -1,6 +1,7 @@
 package me.coderdan.fall.state;
 
 import me.coderdan.fall.Game;
+import me.coderdan.fall.util.Graphics;
 import org.lwjgl.input.Keyboard;
 import org.newdawn.slick.Color;
 import org.newdawn.slick.TrueTypeFont;
@@ -106,7 +107,7 @@ public class MainMenu extends State
 	public void render()
 	{
 		// title
-		me.coderdan.fall.Graphics.drawText("Fall", ARIAL_40, Color.red, x, y);
+		me.coderdan.fall.util.Graphics.drawText("Fall", ARIAL_40, Color.red, x, y);
 		
 		// menu items
 		addMenuItem("Play", 0);
@@ -125,7 +126,7 @@ public class MainMenu extends State
 		
 		int x = 10;
 		int y = 200 + location * 25;
-		me.coderdan.fall.Graphics.drawText(name, ARIAL_20, color, x, y);
+		Graphics.drawText(name, ARIAL_20, color, x, y);
 	}
 	
 	public int getID()

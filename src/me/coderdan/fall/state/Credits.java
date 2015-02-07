@@ -1,7 +1,7 @@
 package me.coderdan.fall.state;
 
 import me.coderdan.fall.Game;
-import me.coderdan.fall.Graphics;
+import me.coderdan.fall.util.Graphics;
 import org.lwjgl.input.Keyboard;
 import org.newdawn.slick.Color;
 import org.newdawn.slick.TrueTypeFont;
